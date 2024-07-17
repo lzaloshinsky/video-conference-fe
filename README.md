@@ -1,7 +1,9 @@
 # Video conference Frontend
 
 This is a partial project to implement a UI and bit of UX for a VC application.
-The project isn't working
+The project isn't working in terms of video conference, but has a detailed UI
+
+Visit the site: http://video-conference.com/
 
 ## Some Snippets
 
