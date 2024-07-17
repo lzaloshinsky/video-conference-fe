@@ -6,18 +6,18 @@ The project isn't working
 ## Some Snippets
 
 Main Screen
-![1st snippets](./snippets/snippet1)
+![1st snippets](./snippets/snippet1.png)
 
 Full Screen
-![2nd snippets](./snippets/snippet2)
+![2nd snippets](./snippets/snippet2.png)
 
 Many Participants
-![3rd snippets](./snippets/snippet3)
+![3rd snippets](./snippets/snippet3.png)
 
 Responsiveness
-![4th snippets](./snippets/snippet4)
-![5th snippets](./snippets/snippet5)
-![6th snippets](./snippets/snippet6)
+![4th snippets](./snippets/snippet4.png)
+![5th snippets](./snippets/snippet5.png)
+![6th snippets](./snippets/snippet6.png)
 
 ## Available Scripts
 
