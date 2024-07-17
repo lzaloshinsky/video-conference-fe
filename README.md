@@ -5,16 +5,16 @@ The project isn't working in terms of video conference, but has a detailed UI
 
 ## Some Snippets
 
-Main Screen
+### Main Screen
 ![1st snippets](./snippets/snippet1.png)
 
-Full Screen
+### Full Screen
 ![2nd snippets](./snippets/snippet2.png)
 
-Many Participants
+### Multiple Participants
 ![3rd snippets](./snippets/snippet3.png)
 
-Responsiveness
+### Responsiveness
 ![4th snippets](./snippets/snippet4.png)
 ![5th snippets](./snippets/snippet5.png)
 ![6th snippets](./snippets/snippet6.png)
