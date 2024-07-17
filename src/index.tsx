@@ -7,8 +7,6 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
-
 root.render(
   <StrictMode>
     <App />
