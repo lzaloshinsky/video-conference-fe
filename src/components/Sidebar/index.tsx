@@ -17,7 +17,7 @@ const SideBar = ({
 }) => (
   <div className="relative flex flex-col items-center justify-between w-40 h-full py-4 text-white border-t-2 border-b-2 border-l-2 bg-sky-950 border-emerald-800 rounded-l-3xl">
     <div className="h-18">Israel Logo</div>
-    {/* TODO add the twisted border as an an overlay svg */}
+    {/* TODO add the twisted border as an overlay svg */}
 
     <div className="grid gap-6">
       <SidebarItem

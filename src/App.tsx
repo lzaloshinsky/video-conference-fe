@@ -24,32 +24,38 @@ const App = () => {
     (participant) => participant.isCurrent
   )?.id;
 
-  return (
-    <div
-      className={`h-screen bg-sky-950 flex ${isFullScreen ? "" : "py-3 pl-3"}`}
-    >
-      {!isFullScreen && (
-        <SideBar
+  if (isFullScreen)
+    return (
+      <div className="relative flex flex-col justify-between w-full h-screen bg-sky-950">
+        <Conference
+          judges={judges}
+          parties={parties}
+          committee={committee}
+          startDate={startDate}
           meetingId={meetingId}
-          participantsCount={allParticipants.length + 1}
+          isFullScreen={isFullScreen}
+          currentParticipantId={currentParticipantId}
+          onCloseFullscreenClick={() => setIsFullScreen(false)}
         />
-      )}
+      </div>
+    );
 
-      <div
-        className={`flex flex-col h-full w-full relative justify-between ${
-          isFullScreen ? "" : "mr-4"
-        }`}
-      >
-        {!isFullScreen && (
-          <Header
-            topic={topic}
-            committee={committee}
-            caseNumber={caseNumber}
-            isRecording={isRecording}
-            isFullScreen={isFullScreen}
-            onShowFullScreen={() => setIsFullScreen(true)}
-          />
-        )}
+  return (
+    <div className="flex h-screen py-3 pl-3 bg-sky-950">
+      <SideBar
+        meetingId={meetingId}
+        participantsCount={allParticipants.length + 1}
+      />
+
+      <div className="relative flex flex-col justify-between w-full h-full mr-4">
+        <Header
+          topic={topic}
+          committee={committee}
+          caseNumber={caseNumber}
+          isRecording={isRecording}
+          isFullScreen={isFullScreen}
+          onShowFullScreen={() => setIsFullScreen(true)}
+        />
 
         <Conference
           judges={judges}
